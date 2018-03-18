@@ -1,6 +1,6 @@
 import React from "react";
 
-const Movie = props => {
+const Subreddit = props => {
   function truncate(text) {
     var shortend = text.indexOf(" ", 35);
     if (shortend == -1) return text;
@@ -8,7 +8,7 @@ const Movie = props => {
   }
   if (props.data) {
     return (
-      <div>
+      <div className="topic-container">
         <div>{truncate(props.data.title)}</div>
       </div>
     );
@@ -16,4 +16,4 @@ const Movie = props => {
   return null;
 };
 
-export default Movie;
+export default Subreddit;
