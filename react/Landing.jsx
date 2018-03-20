@@ -28,31 +28,25 @@ class Landing extends Component {
     return (
       <div className="Landing">
         <div className="Topic">
+          <h2>r/movies</h2>
           {check > 1
-            ? <h2>{this.state.movies[0].data.subreddit_name_prefixed}</h2>
-            : null}
-          {check > 1
-            ? this.state.movies.map(data => {
+            ? this.state.movies.slice(0, 10).map(data => {
                 return <Topic data={data.data} key={data.data.id} />;
               })
             : <div className="loader" />}
         </div>
         <div className="Topic">
-          {this.state.tech.length > 1
-            ? <h2>{this.state.tech[0].data.subreddit_name_prefixed}</h2>
-            : null}
+          <h2>r/technology</h2>
           {check > 1
-            ? this.state.tech.map(data => {
+            ? this.state.tech.slice(0, 10).map(data => {
                 return <Topic data={data.data} key={data.data.id} />;
               })
             : <div className="loader" />}
         </div>
         <div className="Topic">
-          {this.state.space.length > 1
-            ? <h2>{this.state.space[0].data.subreddit_name_prefixed}</h2>
-            : null}
+          <h2>r/space</h2>
           {check > 1
-            ? this.state.space.map(data => {
+            ? this.state.space.slice(0, 10).map(data => {
                 return <Topic data={data.data} key={data.data.id} />;
               })
             : <div className="loader" />}
