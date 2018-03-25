@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: grey; 
+  color: rgb(44, 44, 44); 
 }
 
 /* Loader*/
@@ -26,12 +26,9 @@ body {
 }
 /* Loader*/
 
-.Landing {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px) {}
 
-.topic-container{
- margin: 2%
-}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 768px) {}
+
