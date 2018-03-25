@@ -30,5 +30,11 @@ body {
 @media only screen and (min-width: 480px) {}
 
 /* Desktop screen Sizes */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .Map-Container {
+    width: 300px;
+    height: 500px;
+  }
+
+}
 

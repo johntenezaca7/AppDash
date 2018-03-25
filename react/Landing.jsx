@@ -1,20 +1,35 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
+import GoogleMapReact from "google-map-react";
+console.log(GoogleMapReact);
 
-import Topic from "./Subreddit.jsx";
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Landing extends Component {
-  state = {
-    hello: "Hello"
-  };
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <div className="Landing">
-        What should this be?
+      <div className="Map-Container">
+        <GoogleMapReact
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+          style={{ height: "300px" }}
+        >
+          <AnyReactComponent
+            lat={59.955413}
+            lng={30.337844}
+            text={"Google Map"}
+          />
+        </GoogleMapReact>
       </div>
     );
   }
 }
+
+Landing.defaultProps = {
+  center: { lat: 59.95, lng: 30.33 },
+  zoom: 11
+};
 
 export default Landing;

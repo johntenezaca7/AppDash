@@ -27,6 +27,7 @@
     "cors": "2.8.3",
     "express": "4.15.3",
     "extract-text-webpack-plugin": "^2.1.2",
+    "google-map-react": "^0.34.0",
     "lodash": "4.17.4",
     "node-sass": "^4.7.2",
     "preact": "8.1.0",
