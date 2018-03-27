@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: rgb(44, 44, 44); 
+  margin: 0;
 }
 
 /* Loader*/
@@ -31,10 +31,28 @@ body {
 
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-  .Map-Container {
-    width: 300px;
-
+  .Landing-Photo{
+    background-image: url("https://images.pexels.com/photos/54455/cook-food-kitchen-eat-54455.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100vh;
+    width: 100%;
+    background-position:center bottom;
   }
 
+  .Nav-Bar {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .Logo {
+    
+    width: auto;
+    height:150px;
+  }
+
+  .About {
+    background-color:rgba(255, 255, 255, 0.5);
+    width: 800px;
+    height:550px;
+  }
 }
 
